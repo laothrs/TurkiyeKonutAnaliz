@@ -4,14 +4,14 @@ Bu proje [@laothrs](https://github.com/laothrs) tarafından geliştirilmiştir.
 
 ## Proje Hakkında
 
-Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir incelemesini sunmaktadır. Çalışma, 2023'ün başı itibariyle satılık 40.482 konut ilanını içeren bir veri kümesine dayanmaktadır.
+Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir incelemesini sunmaktadır. Çalışma, 2024'ün başı itibariyle satılık 40.482 konut ilanını içeren bir veri kümesine dayanmaktadır.
 
 ## Analiz İçeriği
 
 ### 1. Veri Kaynağı
 - Emlak listelerinin önde gelen bir Türk web sitesinden derlenmiştir
 - 40.482 konut ilanı analiz edilmiştir
-- Veriler 2023 yılı başına aittir
+- Veriler 2024 yılı başına aittir
 
 ### 2. İncelenen Faktörler
 - Fiyat
