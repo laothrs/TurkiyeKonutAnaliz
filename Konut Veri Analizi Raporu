@@ -26,15 +26,17 @@ Regresyon Analizi: Metrekare ve birim fiyat arasındaki ilişkiyi daha ayrıntı
 
 Fiyat ve metrekare için temel tanımlayıcı istatistikler aşağıdaki gibi özetlenmiştir:
 
-Metrekareye İlişkin Özet İstatistikler
+#### Metrekareye İlişkin Özet İstatistikler
 
-Değişken	Ortalama	Medyan	Standart Sapma	Min	%25 Yüzdelik Dilim	%50 Yüzdelik Dilim	%75 Yüzdelik Dilim	Maks
-Metrekare	136,47	135	58,29	1,05	100	135	165	985
+| Değişken | Ortalama | Medyan | Standart Sapma | Min | %25 Yüzdelik Dilim | %50 Yüzdelik Dilim | %75 Yüzdelik Dilim | Maks |
+|----------|-----------|---------|----------------|-----|-------------------|-------------------|-------------------|------|
+| Metrekare | 136,47 | 135 | 58,29 | 1,05 | 100 | 135 | 165 | 985 |
 
-Fiyata İlişkin Özet İstatistikler
+#### Fiyata İlişkin Özet İstatistikler
 
-Değişken	Ortalama	Medyan	Standart Sapma	Min	%25 Yüzdelik Dilim	%50 Yüzdelik Dilim	%75 Yüzdelik Dilim	Maks
-Fiyat	3.292.594,15	2.800.000,00	2.975.217,04	110.000	2.050.000,00	2.800.000,00	3.795.000,00	250.000.000
+| Değişken | Ortalama | Medyan | Standart Sapma | Min | %25 Yüzdelik Dilim | %50 Yüzdelik Dilim | %75 Yüzdelik Dilim | Maks |
+|----------|-----------|---------|----------------|-----|-------------------|-------------------|-------------------|------|
+| Fiyat | 3.292.594,15 | 2.800.000,00 | 2.975.217,04 | 110.000 | 2.050.000,00 | 2.800.000,00 | 3.795.000,00 | 250.000.000 |
 
 Bu istatistikler, Türkiye'deki konut piyasasının, çok çeşitli fiyatlar ve metrekareler ile önemli bir heterojenliğe sahip olduğunu ortaya koymaktadır. Yüksek standart sapmalar, ortalamadan önemli sapmalar olduğunu ve hem lüks hem de uygun fiyatlı segmentlerin varlığını göstermektedir.
 
