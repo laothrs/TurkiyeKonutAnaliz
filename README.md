@@ -25,10 +25,10 @@ Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir ince
 ### 3. Önemli Bulgular
 
 #### TOKİ vs Diğer Konutlar - Ortalama Metrekare
-![TOKİ vs Diğer Konutlar - Ortalama m²](Analiz%20Fotoğrafları/TOKIvsDigerKonutlarMetrekare.png)
+![TOKİ vs Diğer Konutlar - Ortalama m²](Analiz%20Fotoğrafları/tokivsdigermetrekare.png)
 
 #### TOKİ vs Diğer Konutlar - Ortalama Fiyat
-![TOKİ vs Diğer Konutlar - Ortalama Fiyat](Analiz%20Fotoğrafları/TOKIvsDigerKonutlarFiyat.png)
+![TOKİ vs Diğer Konutlar - Ortalama Fiyat](Analiz%20Fotoğrafları/Tokivsdigerkonutlarfiyat.png)
 
 #### Değişkenler Arası Korelasyon
 ![Değişkenler Arası Korelasyon](Analiz%20Fotoğrafları/KorelasyonAnalizi.png)
@@ -37,7 +37,7 @@ Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir ince
 ![Metrekare - Birim Fiyat İlişkisi](Analiz%20Fotoğrafları/MetrekareBirimFiyat.png)
 
 #### Oda Sayısına Göre Fiyat Dağılımı
-![Oda Sayısına Göre Fiyat Dağılımı](Analiz%20Fotoğrafları/OdaSayisinaGoreFiyat.png)
+![Oda Sayısına Göre Fiyat Dağılımı](Analiz%20Fotoğrafları/OdaSayisi.png)
 
 ### 4. Temel İstatistikler
 
