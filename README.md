@@ -2,9 +2,29 @@
 
 Bu proje [@laothrs](https://github.com/laothrs) tarafından geliştirilmiştir.
 
+## Kurulum
+
+1. Python 3.8 veya üzeri sürümün yüklü olduğundan emin olun
+2. Sanal ortam oluşturun ve aktifleştirin:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # Linux/Mac için
+# veya
+venv\Scripts\activate  # Windows için
+```
+3. Gerekli paketleri yükleyin:
+```bash
+pip install -r requirements.txt
+```
+4. Jupyter Notebook'u başlatın:
+```bash
+jupyter notebook
+```
+5. Tarayıcıda açılan Jupyter arayüzünden `KonutAnalizi.ipynb` dosyasını açın
+
 ## Proje Hakkında
 
-Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir incelemesini sunmaktadır. Çalışma, 2023'ün başı itibariyle satılık 40.482 konut ilanını içeren bir veri kümesine dayanmaktadır.
+Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir incelemesini sunmaktadır. Çalışma, 2024-2025 yılları arasında toplanan 40.482 konut ilanını içeren bir veri kümesine dayanmaktadır.
 
 ## Analiz İçeriği
 
