@@ -22,7 +22,21 @@ Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir ince
 - TOKİ ve TOKİ dışı konut karşılaştırması
 - Acil ve lüks konut oranları
 
-### 3. Önemli Bulgular
+### 3. Türkiye Geneli Harita Analizleri
+
+#### Türkiye Ortalama Konut Büyüklüğü Haritası
+![Türkiye Metrekare Haritası](Analiz%20Fotoğrafları/turkiye_metrekare_haritasi.png)
+*İllere göre ortalama konut büyüklüğü (m²) dağılımı*
+
+#### Türkiye TOKİ Konutları Oranı Haritası
+![Türkiye TOKİ Dağılım Haritası](Analiz%20Fotoğrafları/turkiye_toki_haritasi.png)
+*İllere göre TOKİ konutlarının oranı (%)*
+
+#### Türkiye Ortalama Konut Fiyatı Haritası
+![Türkiye Fiyat Haritası](Analiz%20Fotoğrafları/turkiye_fiyat_haritasi.png)
+*İllere göre ortalama konut fiyatı (TL) dağılımı*
+
+### 4. Karşılaştırmalı Analizler
 
 #### TOKİ vs Diğer Konutlar - Ortalama Metrekare
 ![TOKİ vs Diğer Konutlar - Ortalama m²](Analiz%20Fotoğrafları/tokivsdigermetrekare.png)
@@ -39,7 +53,7 @@ Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir ince
 #### Oda Sayısına Göre Fiyat Dağılımı
 ![Oda Sayısına Göre Fiyat Dağılımı](Analiz%20Fotoğrafları/OdaSayisi.png)
 
-### 4. Temel İstatistikler
+### 5. Temel İstatistikler
 
 #### Metrekare İstatistikleri
 | İstatistik | Değer |
@@ -59,12 +73,14 @@ Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir ince
 | Minimum | 110,000.00 ₺ |
 | Maksimum | 250,000,000.00 ₺ |
 
-### 5. Önemli Sonuçlar
+### 6. Önemli Sonuçlar
 
 1. TOKİ konutları, özel sektör konutlarına göre daha uygun fiyatlıdır
 2. Büyük şehirlerde (özellikle İstanbul, Ankara ve Kocaeli) metrekare fiyatları daha yüksektir
 3. Metrekare arttıkça birim fiyatlarda düşüş gözlemlenmektedir
 4. 3+1 konutlar en geniş fiyat aralığına ve en yüksek medyan fiyata sahiptir
+5. Doğu illerinde TOKİ konutlarının oranı daha yüksektir
+6. Ortalama konut büyüklüğü doğu illerinde daha fazladır
 
 ## Detaylı Rapor
 
