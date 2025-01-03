@@ -1,0 +1,163 @@
+Konut Veri Analizi Raporu
+
+1. Giriş
+
+Bu rapor, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir analizini sunmaktadır. Bu analiz, emlak listelerinin önde gelen bir Türk web sitesinden derlenen ve 2023'ün başı itibariyle satılık 40.482 konut ilanını içeren bir veri kümesine dayanmaktadır. Çalışma, fiyat, metrekare, metrekare başına birim fiyat ve il, oda sayısı, TOKİ'ye karşı TOKİ dışı durum, acil ve lüks konutların oranı gibi diğer ilgili faktörler arasındaki karmaşık ilişkiyi derinlemesine incelemektedir.
+
+2. Veriler ve Metodoloji
+
+Veri kümesi, Toplu Konut İdaresi Başkanlığı (TOKİ) tarafından sağlanan ve hükümet destekli uygun fiyatlı konutları temsil eden TOKİ konutları ile özel sektör tarafından geliştirilen TOKİ dışı konutlar olmak üzere iki ana kategoriye ayrıldı. Bu ayrım, her segmentin kendine özgü özelliklerini ve dinamiklerini ortaya çıkarmak için karşılaştırmalı bir analiz yapmamıza olanak tanır.
+
+Çalışma, verileri titizlikle incelemek, kalıpları belirlemek ve anlamlı içgörüler elde etmek için çeşitli istatistiksel ve görselleştirme teknikleri kullanmaktadır. Bu teknikler şunları içerir:
+
+Tanımlayıcı İstatistikler: Ortalama, medyan, standart sapma, minimum ve maksimum değerler gibi merkezi eğilim ve dağılım ölçüleri, her değişken için temel istatistiksel özellikleri özetlemek için hesaplanmıştır.
+
+Korelasyon Analizi: Pearson korelasyon katsayıları, fiyat, metrekare ve metrekare başına birim fiyat gibi nicel değişkenler arasındaki doğrusal ilişkilerin gücünü ve yönünü ölçmek için hesaplanmıştır.
+
+Karşılaştırmalı Analiz: TOKİ konutları ile TOKİ dışı konutların ortalama metrekare ve ortalama fiyat açısından önemli farklılıklar gösterip göstermediğini belirlemek için bağımsız örneklem t-testleri yapılmıştır.
+
+Coğrafi Analiz: Veriler, il bazında toplanmış ve konut piyasası parametrelerindeki bölgesel farklılıkları ortaya koymak için ortalama metrekare başına birim fiyatın kloroplet haritası oluşturulmuştur.
+
+Regresyon Analizi: Metrekare ve birim fiyat arasındaki ilişkiyi daha ayrıntılı olarak incelemek için bir dağılım grafiği oluşturulmuş ve bir regresyon çizgisi uydurulmuştur. Bu ilişki, çeşitli illerden elde edilen veriler kullanılarak daha da incelenmiştir.
+
+3. Bulgular ve İçgörüler
+
+3.1. Tanımlayıcı İstatistikler
+
+Fiyat ve metrekare için temel tanımlayıcı istatistikler aşağıdaki gibi özetlenmiştir:
+
+Metrekareye İlişkin Özet İstatistikler
+
+Değişken	Ortalama	Medyan	Standart Sapma	Min	%25 Yüzdelik Dilim	%50 Yüzdelik Dilim	%75 Yüzdelik Dilim	Maks
+Metrekare	136,47	135	58,29	1,05	100	135	165	985
+
+Fiyata İlişkin Özet İstatistikler
+
+Değişken	Ortalama	Medyan	Standart Sapma	Min	%25 Yüzdelik Dilim	%50 Yüzdelik Dilim	%75 Yüzdelik Dilim	Maks
+Fiyat	3.292.594,15	2.800.000,00	2.975.217,04	110.000	2.050.000,00	2.800.000,00	3.795.000,00	250.000.000
+
+Bu istatistikler, Türkiye'deki konut piyasasının, çok çeşitli fiyatlar ve metrekareler ile önemli bir heterojenliğe sahip olduğunu ortaya koymaktadır. Yüksek standart sapmalar, ortalamadan önemli sapmalar olduğunu ve hem lüks hem de uygun fiyatlı segmentlerin varlığını göstermektedir.
+
+3.2. Korelasyon Analizi
+
+Fiyat, metrekare ve metrekare başına birim fiyat arasındaki korelasyon matrisi aşağıda sunulmuştur:
+
+![Değişkenler Arası Korelasyon](Analiz%20Fotoğrafları/KorelasyonAnalizi.png)
+
+Beklendiği gibi, fiyat ile metrekare arasında güçlü bir pozitif korelasyon (r = 0,72) gözlemlenmiştir, bu da daha büyük konutların daha yüksek fiyatlara sahip olduğunu göstermektedir. Fiyat ile metrekare başına birim fiyat arasında orta derecede bir pozitif korelasyon (r = 0,52) da vardır, bu da daha yüksek birim fiyatlara sahip mülklerin genel olarak daha pahalı olma eğiliminde olduğunu göstermektedir. Bununla birlikte, metrekare ile metrekare başına birim fiyat arasında ilginç bir şekilde zayıf bir negatif korelasyon (r = -0,08) vardır. Bu, Türkiye pazarında, daha büyük mülklerin metrekare başına biraz daha düşük fiyatlara sahip olabileceğini ve potansiyel olarak ölçek ekonomilerini veya daha büyük, daha az talep gören birimler için daha yüksek fiyat esnekliğini yansıtabileceğini göstermektedir.
+
+3.3. TOKİ'ye Karşı TOKİ Dışı Konutlar
+
+TOKİ konutları ile TOKİ dışı konutlar arasındaki karşılaştırmalı analiz, ortalama metrekare ve ortalama fiyatta önemli farklılıklar olduğunu ortaya koymaktadır:
+
+![TOKİ vs Diğer Konutlar - Ortalama m²](Analiz%20Fotoğrafları/TOKIvsDigerKonutlarMetrekare.png)
+
+![TOKİ vs Diğer Konutlar - Ortalama Fiyat](Analiz%20Fotoğrafları/TOKIvsDigerKonutlarFiyat.png)
+
+TOKİ dışı konutlar, TOKİ konutlarına kıyasla önemli ölçüde daha büyük ortalama metrekareye (137,12'ye karşı 111,97) ve önemli ölçüde daha yüksek ortalama fiyata (3.323.604,53 TL'ye karşı 2.139.300,74 TL) sahiptir. Bu bulgular, TOKİ'nin uygun fiyatlı konut sağlama misyonunu yerine getirdiğini, TOKİ dışı konutların ise daha geniş ve muhtemelen daha lüks bir pazar segmentine hitap ettiğini göstermektedir.
+
+3.4. Coğrafi Analiz
+
+İllere göre ortalama metrekare başına birim fiyatın kloroplet haritası, konut piyasası değerlerinde önemli bölgesel farklılıklar olduğunu ortaya koymaktadır.
+
+İstanbul, en yüksek ortalama metrekare başına birim fiyatla öne çıkmakta ve onu büyük metropol alanları olan Ankara ve Kocaeli izlemektedir. Bu durum, muhtemelen bu bölgelerdeki yüksek talep, sınırlı arazi mevcudiyeti ve güçlü ekonomik faaliyetten kaynaklanmaktadır. Bunun aksine, Kilis, Siirt ve Kayseri gibi iller, potansiyel olarak daha düşük talep, daha bol arazi mevcudiyeti ve daha düşük gelir seviyelerini yansıtan en düşük ortalama metrekare başına birim fiyatları sergilemektedir.
+
+3.5. Metrekare ve Birim Fiyat İlişkisi
+
+Metrekare ile birim fiyat arasındaki ilişkiyi gösteren dağılım grafiği, genel olarak negatif bir eğilim olduğunu ortaya koymaktadır:
+
+![Metrekare - Birim Fiyat İlişkisi](Analiz%20Fotoğrafları/MetrekareBirimFiyat.png)
+
+Bu bulgu, korelasyon analiziyle uyumludur ve daha büyük konutların Türkiye pazarında metrekare başına daha düşük fiyatlara sahip olma eğiliminde olduğunu göstermektedir. Bu olgu, çeşitli faktörlere bağlanabilir, örneğin:
+
+Ölçek Ekonomileri: Daha büyük evlerin inşası, birim alan başına daha düşük maliyetlere yol açabilir ve bu da fiyatlara yansır.
+
+Pazar Talebi: Daha büyük konutlara olan talep, özellikle belirli bölgelerde daha küçük, daha uygun fiyatlı birimlere kıyasla daha düşük olabilir ve bu da fiyat ayarlamalarına yol açabilir.
+
+Hedef Pazar: Daha büyük evler genellikle daha yüksek gelirli alıcılara hitap eder ve bu alıcılar birim fiyat konusunda daha hassas olabilir ve daha düşük metrekare başına fiyatlar için pazarlık yapabilir.
+
+İllere göre ayrılmış verileri içeren dağılım grafiği, bu ilişkinin tutarlılığını daha da vurgulamaktadır. Neredeyse her il, metrekare arttıkça birim fiyatın düşme eğiliminde olduğunu göstermektedir. Bu durumun dikkate değer bir istisnası, diğer illere kıyasla nispeten daha yüksek bir birim fiyata sahip olan Hakkari'dir. Bunun nedeni, muhtemelen konut talebinin arzı aştığı Hakkari'deki benzersiz yerel pazar dinamikleridir.
+
+3.6. Oda Sayısına Göre Fiyat Dağılımı
+
+Oda sayısına göre fiyat dağılımını gösteren bir grafik, ilginç kalıpları ortaya koymaktadır:
+
+![Oda Sayısına Göre Fiyat Dağılımı](Analiz%20Fotoğrafları/OdaSayisinaGoreFiyat.png)
+
+Grafik, 3+1 konutların en geniş fiyat aralığına ve en yüksek medyan fiyata sahip olduğunu, bunu 2+1 konutların izlediğini göstermektedir. Bu durum, bu konfigürasyonların Türkiye pazarında muhtemelen aileler ve genç profesyoneller tarafından tercih edildiğini ve yüksek talep gördüğünü göstermektedir. Stüdyo daireler (1+0) en düşük medyan fiyata sahiptir, bu da muhtemelen daha küçük boyutlarından ve bekar bireylere veya öğrencilere yönelik hedef pazarlarından kaynaklanmaktadır.
+
+3.7. İl Bazında Ek İçgörüler
+
+'rapor_metrekare_20250103_182848.xlsx' ve 'rapor_il_bazli_20250103_182455.xlsx' dosyalarından elde edilen veriler, her il için daha ayrıntılı bilgiler sağlamaktadır. Bu veriler, ilan sayısı, ortalama fiyat, medyan fiyat, minimum fiyat, maksimum fiyat, ortalama metrekare, ortalama metrekare başına fiyat, TOKİ oranı, acil satış oranı ve lüks konut oranı gibi çeşitli metrikleri içermektedir.
+
+Örneğin, veriler, İstanbul'un sadece en yüksek ortalama metrekare başına birim fiyata değil, aynı zamanda en yüksek lüks konut oranına (0,13) sahip olduğunu ve yüksek değerli mülklerin güçlü bir varlığını gösterdiğini ortaya koymaktadır. Bunun aksine, Ardahan en düşük lüks konut oranına (0,07) sahiptir ve bu da lüks konutlara daha az odaklanıldığını göstermektedir.
+
+Ayrıca, veriler, acil satışların oranında iller arasında önemli bir farklılık olduğunu ortaya koymaktadır. Örneğin, Ankara en yüksek acil satış oranına (0,16) sahipken, Antalya nispeten daha düşük bir orana (0,10) sahiptir. Bu farklılıklar, yerel pazar dinamiklerini, ekonomik koşulları ve satıcı aciliyetini yansıtabilir.
+
+4. Sonuç
+
+Bu kapsamlı analiz, Türkiye konut piyasasının çok yönlü olduğunu ve fiyatlar, metrekareler, metrekare başına birim fiyatlar ve bölgesel farklılıklarda önemli bir heterojenliğe sahip olduğunu ortaya koymaktadır. Çalışma, TOKİ konutları ile TOKİ dışı konutlar arasında, TOKİ'nin uygun fiyatlı konut sağlama misyonunu yerine getirdiğini vurgulayan önemli farklılıkları ortaya koymuştur.
+
+Metrekare ile birim fiyat arasındaki negatif ilişki, daha büyük konutların ölçek ekonomileri, pazar talebi farklılıkları ve hedef pazar özellikleri gibi faktörler nedeniyle metrekare başına daha düşük fiyatlara sahip olabileceğini düşündürmektedir. Coğrafi analiz, İstanbul'un en yüksek emlak değerlerine sahip önde gelen pazar olarak ortaya çıktığını, diğer illerin ise yerel ekonomik koşullara ve talep modellerine bağlı olarak değişen fiyat seviyeleri sergilediğini ortaya koymuştur.
+
+Genel olarak, bu rapor Türkiye konut piyasasının mevcut durumuna ilişkin değerli bilgiler sağlamakta ve paydaşların bilinçli kararlar almasına yardımcı olmak için önemli eğilimleri ve kalıpları vurgulamaktadır.
+
+5. Öneriler
+
+Bu analizin bulgularına dayanarak, politika yapıcılar, emlak geliştiricileri, ev alıcıları ve yatırımcılar için aşağıdaki öneriler sunulmuştur:
+
+5.1. Politika Yapıcılar için
+
+Uygun Fiyatlı Konut Girişimleri: Özellikle düşük gelirli kesimler için uygun fiyatlı konut açığını ele almak üzere TOKİ girişimlerini genişletmeye ve desteklemeye devam edin.
+
+Bölgesel Kalkınma: Bölgesel eşitsizlikleri azaltmak ve daha dengeli bir konut piyasası yaratmak için ekonomik kalkınmayı ve istihdam yaratmayı daha az gelişmiş illerde teşvik edin.
+
+Veri Şeffaflığı: Karar verme ve piyasa verimliliğini artırmak için kapsamlı ve güncel konut verilerinin kullanılabilirliğini ve erişilebilirliğini geliştirin.
+
+Sürdürülebilir Kentleşme: Konut arzını ve talebini dengeleyen, yeşil alanları koruyan ve verimli altyapı geliştiren sürdürülebilir kentsel planlama politikalarını teşvik edin.
+
+5.2. Emlak Geliştiricileri için
+
+Pazar Segmentasyonu: Geliştirme stratejilerini farklı pazar segmentlerinin, özellikle de büyüyen orta gelirli kesimin özel ihtiyaçlarına ve tercihlerine göre uyarlayın.
+
+Çeşitlendirme: Piyasa dalgalanmalarına karşı riski azaltmak için farklı illerde ve konut tiplerinde proje portföylerini çeşitlendirmeyi düşünün.
+
+Pazar Araştırması: Yatırım kararlarını yönlendirmek ve gelişmekte olan eğilimleri belirlemek için kapsamlı pazar araştırması ve fizibilite çalışmaları yapın.
+
+Sürdürülebilir İnşaat: Çevresel etkiyi en aza indirmek ve uzun vadeli maliyet tasarrufları elde etmek için yeşil bina uygulamalarını ve enerji tasarruflu tasarımları benimseyin.
+
+5.3. Ev Alıcıları ve Yatırımcılar için
+
+Kapsamlı Araştırma: Bir satın alma kararı vermeden önce, fiyatları, konut tiplerini ve mahalle özelliklerini karşılaştırmak için kapsamlı bir araştırma yapın.
+
+Konum: Ulaşım, okullar, hastaneler ve diğer olanaklara yakınlık gibi faktörleri göz önünde bulundurarak, yatırım için yüksek büyüme potansiyeline sahip ve arzu edilen olanaklara sahip yerleri arayın.
+
+Bütçe: Uzun vadeli mali yükümlülükleri karşılayabildiğinizden emin olmak için ipotek ödemeleri, emlak vergileri ve bakım masrafları dahil olmak üzere gerçekçi bir bütçe belirleyin.
+
+Profesyonel Tavsiye: Kişiselleştirilmiş rehberlik ve bilinçli kararlar almak için saygın emlakçılardan, ipotek brokerlarından ve finansal danışmanlardan profesyonel tavsiye alın.
+
+6. Sınırlamalar
+
+Bu analizin aşağıdaki sınırlamaları kabul edilmelidir:
+
+Veri Kapsamı: Veri kümesi, Türkiye'deki emlak listelerinin önde gelen bir web sitesinden elde edilmiştir ve tüm mevcut konut piyasasını temsil etmeyebilir.
+
+Veri Güncelliği: Veriler 2023'ün başını yansıtmaktadır ve piyasa koşulları o zamandan beri değişmiş olabilir.
+
+Nedensellik: Korelasyonlar ilişkileri gösterse de nedenselliği kanıtlamaz. Gözlemlenen kalıpları etkileyen başka faktörler de olabilir.
+
+Genelleştirilebilirlik: Bulgular, diğer ülkelerdeki veya farklı zaman dilimlerindeki konut piyasalarına genelleştirilemeyebilir.
+
+7. Ek Çalışma
+
+Gelecekteki araştırmalar, Türkiye konut piyasasına ilişkin anlayışımızı derinleştirmek için aşağıdaki alanlara odaklanabilir:
+
+Konut Fiyatlarını Etkileyen Faktörler: Konut fiyatlarını etkileyen makroekonomik faktörler, faiz oranları, demografik değişiklikler ve hükümet politikaları gibi değişkenleri araştırın.
+
+Uygun Fiyatlı Konut Etkisi: TOKİ girişimlerinin konut sahipliği oranları ve hanehalkı refahı üzerindeki uzun vadeli etkisini değerlendirin.
+
+Bölgesel Pazar Dinamikleri: Belirli illerdeki konut piyasalarını şekillendiren benzersiz faktörleri belirlemek için her bölge için derinlemesine analizler yapın.
+
+Konut Tercihleri: Ev alıcılarının tercihlerini ve konut seçimlerini etkileyen faktörleri anlamak için anketler ve nitel araştırmalar yapın.
+
+Tahmine Dayalı Modelleme: Geçmiş verilere ve ilgili değişkenlere dayalı olarak konut fiyatlarını ve piyasa eğilimlerini tahmin etmek için tahmine dayalı modeller geliştirin.
