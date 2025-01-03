@@ -11,7 +11,7 @@ Bu analiz, Türkiye'deki konut piyasasının mevcut durumunun kapsamlı bir ince
 ### 1. Veri Kaynağı
 - Emlak listelerinin önde gelen bir Türk web sitesinden derlenmiştir
 - 40.482 konut ilanı analiz edilmiştir
-- Veriler 2023 yılı başına aittir
+- Veriler 2024 yılından 2025 süresince geçen süreye aittir
 
 ### 2. İncelenen Faktörler
 - Fiyat
